@@ -1,0 +1,19 @@
+create virtual environment
+
+C:\Users\daksh\django>python -m venv myvenv
+
+Using virtual environment
+C:\Users\daksh\django>myvenv\Scripts\activate
+
+Installing Django
+(myvenv) C:\Users\daksh\django>python -m pip install --upgrade pip
+
+Installing packages with requirements
+
+First create a requirements.txt file inside of the django/ folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as requirements.txt in the django/ folder. 
+In your django/requirements.txt file you should add the following text:
+
+django/requirements.txt
+Django~=5.2.12
+
+Now, run pip install -r requirements.txt to install Django.
