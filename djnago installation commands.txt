@@ -53,3 +53,29 @@ pip3.10 install --user pythonanywhere
 
 Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere 
 pa_autoconfigure_django.py --python=3.10 https://github.com/dakshayini-patil/my-first-blog.git
+
+to deploy  changes on pytonanywhere
+first we need to push changes on git using local command prompt
+git status
+git add .
+git commit -m "comments"
+git push
+then pull changes on pythonanywhere using bash of pythonanywhere
+git pull
+if css files are added in static folder or css changes are done then need to run 
+python manage.py collectstatic
+
+Query sheet
+python manage.py shell
+to fetch posts
+Post.objects.all()
+from blog.models import Post
+
+to add posts
+User.objects.all()
+me = User.objects.get(username='ola')
+Post.objects.create(author=me, title='Sample title', text='Test')
+
+publish post
+post = Post.objects.get(title="Sample title")
+post.publish()
