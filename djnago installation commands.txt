@@ -17,3 +17,18 @@ django/requirements.txt
 Django~=5.2.12
 
 Now, run pip install -r requirements.txt to install Django.
+
+to start a new Django project
+django-admin.exe startproject mysite 
+Set up a database
+python manage.py migrate
+Starting the web server
+python manage.py runserver
+
+
+Creating an application
+python manage.py startapp blog
+
+Create tables for models in your database
+python manage.py makemigrations blog
+python manage.py migrate blog
